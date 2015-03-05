@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/green">
+
+	<LinearLayout
+		android:layout_height="28px"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:paddingLeft="5px"
+		android:background="@drawable/top_bg">
+		<ImageView
+			android:layout_width="18px"
+			android:layout_height="18px"
+			android:src="@drawable/manage"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000"
+			android:textSize="14px"
+			android:text="APPLIACATION"/>
+	</LinearLayout>
+	
+	<GridView
+		android:id="@+id/gridView"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:numColumns="3"
+		android:horizontalSpacing="10px"
+		android:verticalSpacing="10px"
+		android:listSelector="@drawable/choose_gridview"
+		android:layout_marginTop="28px"
+		android:layout_marginBottom="58px"
+		android:layout_marginLeft="5px"
+		android:layout_marginRight="5px"/>
+  
+    <ListView
+    	android:id="@+id/lv_apps"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:listSelector="@drawable/choose_listview"
+    	android:layout_marginTop="28px"
+    	android:layout_marginBottom="58px"
+    	android:layout_marginLeft="5px"
+    	android:layout_marginRight="5px"
+    	android:visibility="gone" />
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="56px"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/bottom_bg">
+		
+		<ImageButton
+			android:id="@+id/ib_change_view"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5px"
+			android:layout_marginTop="5px"
+			android:src="@drawable/list"
+			android:layout_width="76px"
+			android:layout_height="52px"/>
+		
+		<ImageButton
+		    android:id="@+id/ib_change_category"
+		    android:layout_width="76px"
+		    android:layout_height="52px"
+		    android:layout_alignParentBottom="true"
+		    android:layout_toRightOf="@+id/ib_change_view"
+		    android:src="@drawable/all" />
+	</RelativeLayout>	
+</RelativeLayout>
